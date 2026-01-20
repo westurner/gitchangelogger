@@ -30,7 +30,7 @@ test = [
 "Homepage" = "https://github.com/westurner/gitchangelogger"
 
 [project.scripts]
-gitchangelog = "gitchangelogger.gitchangelogger:main"
+git-changelog = "gitchangelogger.gitchangelogger:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
