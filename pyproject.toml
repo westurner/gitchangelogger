@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitchangelog"
+version = "0.1.0"
+authors = [
+  { name="@westurner" },
+]
+description = "Generate a changelog from git logs"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "semantic-version",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/westurner/gitchangelog"
+
+[project.scripts]
+gitchangelog = "gitchangelog.gitchangelog:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gitchangelog*"]
