@@ -1,1 +1,1 @@
-# git-changelog
+# git-changelogger

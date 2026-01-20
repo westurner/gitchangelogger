@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gitchangelog"
+name = "gitchangelogger"
 version = "0.1.0"
 authors = [
   { name="@westurner" },
@@ -23,14 +23,15 @@ dependencies = [
 [project.optional-dependencies]
 test = [
     "pytest",
+    "pytest-cov"
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/westurner/gitchangelog"
+"Homepage" = "https://github.com/westurner/gitchangelogger"
 
 [project.scripts]
-gitchangelog = "gitchangelog.gitchangelog:main"
+gitchangelog = "gitchangelogger.gitchangelogger:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["gitchangelog*"]
+include = ["gitchangelogger*"]
